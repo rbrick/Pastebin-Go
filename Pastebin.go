@@ -41,6 +41,8 @@ func SetViewStatus(status int) {
 
 func Execute() (string, error) {
     data := url.Values{}
+    // This sets the API option to paste so we can paste stuff
+    data.Add("api_option", "paste")
     for k, v := range api_params {
         data.Add(k, v)
     }
