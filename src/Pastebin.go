@@ -1,4 +1,4 @@
-package main
+package pastebin
 
 import (
     "net/url"
@@ -61,8 +61,3 @@ func Execute() (string, error) {
 
     return ra, nil
 }
-
-
-
-
-
