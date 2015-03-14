@@ -49,15 +49,15 @@ func Execute() (string, error) {
 
     if err != nil {
         panic(err)
-        return nil, err
+        return "", err
     }
 
     ra, err1 := ioutil.ReadAll(resp.Body)
 
     if err1 != nil {
         panic(err1)
-        return nil, err1
+        return "", err1
     }
 
-    return ra, nil
+    return string(ra), nil
 }
