@@ -11,6 +11,8 @@ func main() {
     pb.SetContent("Hello World!")
     pb.SetName("Example")
     pb.SetViewStatus(pb.PUBLIC)
+    pb.SetUserKey("99324fa628c831fcbcf8e37b34876ac7")
+    pb.SetExpireDate(pb.NEVER)
 
     url, err := pb.Execute()
 
