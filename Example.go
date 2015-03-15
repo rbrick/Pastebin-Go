@@ -5,8 +5,9 @@ import (
     "fmt"
 )
 
+
 func main() {
-    pb.SetAPIKey("SOME API KEY")
+    pb.SetAPIKey("25006b3890b4a16b40847018c2c74fd5")
     pb.SetContent("Hello World!")
     pb.SetName("Example")
     pb.SetViewStatus(pb.PUBLIC)

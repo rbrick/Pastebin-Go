@@ -17,6 +17,17 @@ const (
     PRIVATE
 )
 
+// The expire times value, defaults to Never if not provided
+const (
+    NEVER = "N"
+    TEN_MINUTES = "10M"
+    ONE_HOUR = "1H"
+    ONE_DAY = "1D"
+    ONE_WEEK = "1W"
+    TWO_WEEK = "2W"
+    ONE_MONTH = "1M"
+)
+
 func addParam(k, v string) {
     api_params[k] = v
 }
@@ -36,6 +47,14 @@ func SetName(name string) {
 
 func SetViewStatus(status int) {
     addParam("api_paste_private", strconv.Itoa(status))
+}
+
+func SetUserKey(user_key string) {
+    addParam("api_user_key", user_key)
+}
+
+func SetExpireDate(expire_date string) {
+     addParam("api_paste_expire_date", expire_date)
 }
 
 
